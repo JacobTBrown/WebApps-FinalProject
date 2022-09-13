@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="col"> <!-- Left pane-->
+        <h1>Tic Tac Toe Game</h1>
+        Turn: <img id="turn" src="/images/X.png" height="40" width="40">
+                (Moves = <span id="moves">0</span>)
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button id="button-0">
+                        <img id="image-0" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+                <td>
+                    <button id="button-1">
+                        <img id="image-1" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+                <td>
+                    <button id="button-2">
+                        <img id="image-2" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="button-3">
+                        <img id="image-3" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+                <td>
+                    <button id="button-4">
+                        <img id="image-4" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+                <td>
+                    <button id="button-5">
+                        <img id="image-5" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="button-6">
+                        <img id="image-6" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+                <td>
+                    <button id="button-7">
+                        <img id="image-7" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+                <td>
+                    <button id="button-8">
+                        <img id="image-8" src="/images/U.png" height="100" width="100">
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col">
+                <button id="button-new-game" class="btn btn-outline-primary">New Game</button>
+            </div>
+        </div>
+    </div>
+    <div class="col"> <!-- Right pane-->
+        <h1>Status</h1>
+        <div class="row">
+            <div class="col">
+                <button id="button-history" class="btn btn-outline-primary">Gameplay History</button>
+            </div>
+            <div class="col">
+                <button id="button-clear" class="btn btn-outline-danger">Clear Status</button>
+            </div>
+        </div>
+        <br>
+        <div class="container bg-secondary text-white">
+            <div id="status-message"></div>
+        </div>
+    </div>
+</div>
