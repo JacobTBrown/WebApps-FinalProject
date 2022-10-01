@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col"> <!-- Left pane-->
+        <h1>Baseball Game</h1>
+        <button class="btn btn-secondary btn-sm" style="margin-bottom:5px" disabled>Game Key:</button> 
+        <button id="gamekey" class="btn btn-danger btn-sm" style="margin-bottom:5px" disabled></button>
+        <br>
+        <button class="btn btn-secondary btn-sm" disabled>Guess:</button>
+        <button id="guess" class="btn btn-danger btn-sm" disabled></button>
+
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button id="button-0" class="btn btn-secondary" value="1">1</button>
+                </td>
+                <td>
+                    <button id="button-1" class="btn btn-secondary" value="2">2</button>
+                </td>
+                <td>
+                    <button id="button-2" class="btn btn-secondary" value="3">3</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="button-3" class="btn btn-secondary" value="4">4</button>
+                </td>
+                <td>
+                    <button id="button-4" class="btn btn-secondary" value="5">5</button>
+                </td>
+                <td>
+                    <button id="button-5" class="btn btn-secondary" value="6">6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="button-6" class="btn btn-secondary" value="7">7</button>
+                </td>
+                <td>
+                    <button id="button-7" class="btn btn-secondary" value="8">8</button>
+                </td>
+                <td>
+                    <button id="button-8" class="btn btn-secondary" value="9">9</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="button-9" class="btn btn-secondary" value="0">0</button>
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col">
+                <button id="button-new-game" class="btn btn-outline-primary">New Game</button>
+            </div>
+        </div>
+    </div>
+    <div class="col"> <!-- Right pane-->
+        <h1>Status</h1>
+        <div class="row">
+            <div class="col">
+                <button id="button-history" class="btn btn-outline-primary">Gameplay History</button>
+            </div>
+            <div class="col">
+                <button id="button-clear" class="btn btn-outline-danger">Clear Status</button>
+            </div>
+        </div>
+        <br>
+        <div class="container bg-secondary text-white">
+            <div id="status-message"></div>
+        </div>
+    </div>
+</div>
