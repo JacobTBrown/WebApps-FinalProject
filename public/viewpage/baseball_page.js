@@ -57,6 +57,7 @@ function addGameEvents() {
         for (let i = 0; i < 10; i++)
             screen.buttons[i].disabled = false;
         screen.statusMessage.innerHTML = `${gameModel.status}<br>`;
+        screen.gamekey.innerHTML = '';
         updateScreen();
     });
 
@@ -89,6 +90,7 @@ async function buttonPressListener(event) {
 
             gameModel.status = `Struck out after ${screen.guessCount} ${screen.guessCount == 1 ? 'attempt' : 'attempts'}.`;
             screen.statusMessage.innerHTML += `${gameModel.status}<br>`;
+            screen.gamekey.innerHTML = gameModel.gamekey;
 
             const gamePlay = {
                 attempts: screen.guessCount,
@@ -117,7 +119,7 @@ async function buttonPressListener(event) {
 function getScreenElements() {
     screen.gamekey = document.getElementById('gamekey');
     // temporary setting
-    screen.gamekey.innerHTML = gameModel.gamekey;
+    //screen.gamekey.innerHTML = gameModel.gamekey;
     screen.guess = document.getElementById('guess');
     screen.buttons = [];
     screen.guessHistory = [];
@@ -135,8 +137,6 @@ function getScreenElements() {
 }
 
 function updateScreen() {
-    screen.gamekey.innerHTML = gameModel.gamekey;
-
     screen.guess.innerHTML = `${gameModel.guessKeys[0] != null ? gameModel.guessKeys[0] : ''}, 
         ${gameModel.guessKeys[1] != null ? gameModel.guessKeys[1] : ''}, 
         ${gameModel.guessKeys[2] != null ? gameModel.guessKeys[2] : ''}`;
