@@ -3,6 +3,7 @@ import { getFirestore, collection, addDoc, query, where, orderBy, getDocs } from
 const db = getFirestore();
 const TicTacToeGameCollection = 'tictactoe_game';
 const BaseballCollection = 'baseball_game';
+const CardCollection = 'card_game';
 
 export async function addTicTacToeGameHistory(gamePlay) {
     await addDoc(collection(db, TicTacToeGameCollection), gamePlay);

@@ -25,3 +25,29 @@ input {
     border-width: 0 0 2px 0;
     width: 100%;
 }
+
+.stats {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    background-color: aqua;
+}
+
+div.stats span {
+    padding-left: 10px;
+    padding-bottom: 3px;
+    display: table-cell;
+    text-align: left;
+}
+
+.cols {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+div.cols span {
+    padding-left: 10px;
+    display: table-cell;
+    text-align: left;
+}

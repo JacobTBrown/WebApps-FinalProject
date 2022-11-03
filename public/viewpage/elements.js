@@ -16,6 +16,7 @@ export const menus = {
     signIn: document.getElementById('menu-signin'),
     tictactoe: document.getElementById('menu-tictactoe'),
     baseball: document.getElementById('menu-baseball'),
+    cardgame: document.getElementById('menu-cardgame'),
     about: document.getElementById('menu-about'),
     signOut: document.getElementById('menu-signout'),
 };
