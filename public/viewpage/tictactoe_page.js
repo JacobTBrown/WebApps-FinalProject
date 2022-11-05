@@ -1,10 +1,10 @@
 import * as Elements from './elements.js';
 import * as Util from '../viewpage/util.js';
-import {routePath} from '../controller/route.js';
+import { routePath } from '../controller/route.js';
 import { currentUser } from '../controller/firebase_auth.js';
 import { unauthorizedAccess } from './unauthorized_message.js';
 import { TicTacToeGame, marking } from '../model/tictactoe_game.js';
-import {addTicTacToeGameHistory, getTicTacToeGameHistory} from '../controller/firestore_controller.js';
+import { addTicTacToeGameHistory, getTicTacToeGameHistory } from '../controller/firestore_controller.js';
 import { DEV } from '../model/constants.js';
 
 export function addEventListeners() {
