@@ -101,9 +101,10 @@ export function addListeners() {
 
         try {
             await Firestore.addFeedHistory(history.toFirestore());
+            Util.info('Post added!', 'Your post has been successfully added to the community feed.');
         } catch (e) {
             if (DEV) console.log(e);
-            Util.info("Could not create post", "asdflak;sjdf");
+            Util.info("Could not create post", JSON.stringify(e));
         }
 
         textArea.value = '';
@@ -157,6 +158,7 @@ export function addFeedListeners() {
                 
                 try {
                     await Firestore.updateFeedHistory(feedHistory[i]);
+                    Util.info('Post updated!', 'Your post has been successfully updated.');
 
                     feedHistory = await Firestore.getFeedHistory();
     
@@ -211,7 +213,7 @@ export function addFeedListeners() {
     
                 try {
                     await Firestore.deleteFeedHistory(feedHistory[i]);
-                    Util.info('Post deleted!', 'Your post has been successfully deleted from the database.')
+                    Util.info('Post deleted!', 'Your post has been successfully deleted from the database.');
                 } catch (e) {
                     if (DEV) console.log(e);
                     Util.info('Cannot delete your post', JSON.stringify(e));
