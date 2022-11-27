@@ -10,10 +10,11 @@ export const modalSignin = new bootstrap.Modal(document.getElementById('modal-si
 export const formSignin = document.getElementById('form-signin');
 
 export const modalpreauthElements = document.getElementsByClassName('modal-preauth');
-export const modalpostauthElements = document.getElementsByClassName('modal-postauth');
+export const modalpostauthElements = document.getElementsByClassName('modal-postauth'); 
 
 export const menus = {
     signIn: document.getElementById('menu-signin'),
+    community: document.getElementById('menu-community'),
     tictactoe: document.getElementById('menu-tictactoe'),
     baseball: document.getElementById('menu-baseball'),
     cardgame: document.getElementById('menu-cardgame'),
