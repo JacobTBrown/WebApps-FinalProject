@@ -190,6 +190,7 @@ export function addFeedListeners() {
 
             const textArea = document.getElementById(`textarea-${i}`);
             textArea.style.display = 'none';
+            textArea.value = feedHistory[i].message;
 
             const messageDiv = document.getElementById(`message-${i}`);
             messageDiv.style.display = 'block';
